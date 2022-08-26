@@ -12,9 +12,8 @@ code {
 
 .ancients-container {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: flex-end;
   gap: 10px;
   min-width: 40%;
   padding: 20px;
