@@ -26,6 +26,14 @@ const tracker = {
   blueNum3: document.querySelector("#tracker-bl3"),
 };
 
+const audio = new Audio();
+audio.src = "./assets/ost.mp3";
+audio.volume = 0.05;
+let isPlayed = false;
+
+const flipAudio = new Audio();
+flipAudio.src = "./assets/flip.mp3";
+
 let ancient = ancients.find((ancient) => ancient.id === "azathoth");
 let difficultyLevel = "very-easy";
 let shuffledPack = [];
@@ -168,6 +176,7 @@ function deckClickHandler() {
       shuffledPack.pop().id
     }.png)`;
     updateTracker();
+    flipAudio.play();
   }
 }
 
@@ -218,3 +227,10 @@ ancientsContainer.addEventListener("click", ancientsContainerClickHandler);
 difficultyContainer.addEventListener("click", difficultyContainerClickHandler);
 shuffleButton.addEventListener("click", shuffleButtonClickHandler);
 deck.addEventListener("click", deckClickHandler);
+
+window.addEventListener("click", () => {
+  if (!isPlayed) {
+    audio.play();
+    isPlayed = true;
+  }
+});
