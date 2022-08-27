@@ -1,7 +1,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 0 UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
   margin: 0;
 }
@@ -13,9 +13,9 @@ code {
 .ancients-container {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-end;
+  align-content: center;
   gap: 10px;
-  min-width: 40%;
+  width: 40%;
   padding: 20px;
 }
 
@@ -25,28 +25,79 @@ code {
   background-size: contain;
   box-sizing: border-box;
   cursor: pointer;
-  height: 260px;
-  width: 200px;
+  height: 187.5px;
+  width: 150px;
+  opacity: 0.5;
+  transition: 0.1s ease;
 }
 
-.ancients-container .ancient-card.active {
-  border: 2px solid red;
+.ancients-container .ancient-card.active,
+.ancients-container .ancient-card:hover {
+  opacity: 1;
+}
+
+.ancient-abhoth {
+  background-image: url(./assets/ancients/Abhoth.webp);
+}
+
+.ancient-antediluvium {
+  background-image: url(./assets/ancients/Antediluvium.webp);
+}
+
+.ancient-atlachnacha {
+  background-image: url(./assets/ancients/AtlachNacha.webp);
 }
 
 .ancient-azathoth {
-  background-image: url(./assets/ancients/Azathoth.png);
+  background-image: url(./assets/ancients/Azathoth.webp);
 }
 
 .ancient-cthulthu {
-  background-image: url(./assets/ancients/Cthulthu.png);
+  background-image: url(./assets/ancients/Cthulthu.webp);
+}
+
+.ancient-elderthings {
+  background-image: url(./assets/ancients/ElderThings.webp);
+}
+
+.ancient-hastur {
+  background-image: url(./assets/ancients/Hastur.webp);
+}
+
+.ancient-hypnos {
+  background-image: url(./assets/ancients/Hypnos.webp);
 }
 
 .ancient-logsothoth {
-  background-image: url(./assets/ancients/IogSothoth.png);
+  background-image: url(./assets/ancients/IogSothoth.webp);
+}
+
+.ancient-ithaqua {
+  background-image: url(./assets/ancients/Ithaqua.webp);
+}
+
+.ancient-nephrenka {
+  background-image: url(./assets/ancients/NephrenKa.webp);
+}
+
+.ancient-nyarlathotep {
+  background-image: url(./assets/ancients/Nyarlathotep.webp);
 }
 
 .ancient-shubniggurath {
-  background-image: url(./assets/ancients/ShubNiggurath.png);
+  background-image: url(./assets/ancients/ShubNiggurath.webp);
+}
+
+.ancient-shuddemell {
+  background-image: url(./assets/ancients/ShuddeMell.webp);
+}
+
+.ancient-syzygy {
+  background-image: url(./assets/ancients/Syzygy.webp);
+}
+
+.ancient-yig {
+  background-image: url(./assets/ancients/Yig.webp);
 }
 
 .difficulty-container {
@@ -54,25 +105,28 @@ code {
   flex-direction: column;
   gap: 20px;
   height: 100vh;
+  min-width: 150px;
   justify-content: center;
 }
 
 .difficulty-container .difficulty {
-  border: 2px solid purple;
+  border-radius: 4px;
   box-sizing: border-box;
-  color: purple;
+  color: white;
   cursor: pointer;
   padding: 5px;
   text-align: center;
+  transition: 0.1s ease;
 }
 
 .difficulty {
-  background-color: rgba(94, 255, 0, 0.5);
-  font-weight:bolder;
+  background-color: rgb(11, 118, 59);
+  font-weight: bolder;
 }
 
-.difficulty-container .difficulty.active {
-  background-color: red;
+.difficulty-container .difficulty.active,
+.difficulty-container .difficulty:hover {
+  background-color: rgb(201, 38, 45);
 }
 
 .deck-container {
@@ -85,11 +139,15 @@ code {
 }
 
 .deck-container .shuffle-button {
-  background-color: red;
-  border: 2px solid purple;
-  color: purple;
+  border-radius: 4px;
+  background-color: rgb(11, 118, 59);
+  color: white;
   cursor: pointer;
   padding: 5px;
+}
+
+.deck-container .shuffle-button:hover {
+  background-color: rgb(201, 38, 45);
 }
 
 .deck-container .current-state {
@@ -107,7 +165,7 @@ code {
 }
 
 .deck-container .current-state .stage-container .stage-text {
-  color: purple;
+  color: white;
 }
 
 .deck-container .current-state .stage-container .stage-text.done {
@@ -128,18 +186,19 @@ code {
   height: 30px;
   justify-content: center;
   width: 30px;
+  color: white;
 }
 
 .deck-container .current-state .stage-container .dot.green {
-  background-color: green;
+  background-color: rgb(11, 118, 59);
 }
 
 .deck-container .current-state .stage-container .dot.brown {
-  background-color: #a52a2a;
+  background-color: rgb(183, 146, 24);
 }
 
 .deck-container .current-state .stage-container .dot.blue {
-  background-color: blue;
+  background-color: rgb(52, 118, 189);
 }
 
 .deck-container .deck {
