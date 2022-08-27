@@ -174,18 +174,21 @@ function shuffleButtonClickHandler() {
 function deckClickHandler() {
   if (shuffledPack.length && !isFlipping) {
     isFlipping = true;
-    lastCard.style.backgroundImage = `url(./assets/mythic-cards/${
-      shuffledPack.pop().id
-    }.png)`;
-    updateTracker();
-    flipAudio.play();
-    flipAudio.addEventListener(
-      "ended",
-      () => {
-        isFlipping = false;
-      },
-      { once: true }
-    );
+    const nextCard = new Image();
+    nextCard.src = `./assets/mythic-cards/${shuffledPack.pop().id}.png`;
+    nextCard.onload = () => {
+      console.log(nextCard.src);
+      lastCard.style.backgroundImage = `url(${nextCard.src})`;
+      updateTracker();
+      flipAudio.play();
+      flipAudio.addEventListener(
+        "ended",
+        () => {
+          isFlipping = false;
+        },
+        { once: true }
+      );
+    }
   }
 }
 
