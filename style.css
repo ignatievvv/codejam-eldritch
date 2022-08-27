@@ -122,6 +122,7 @@ code {
 .difficulty {
   background-color: rgb(11, 118, 59);
   font-weight: bolder;
+  user-select: none;
 }
 
 .difficulty-container .difficulty.active,
@@ -144,6 +145,7 @@ code {
   color: white;
   cursor: pointer;
   padding: 5px;
+  user-select: none;
 }
 
 .deck-container .shuffle-button:hover {
@@ -166,6 +168,7 @@ code {
 
 .deck-container .current-state .stage-container .stage-text {
   color: white;
+  user-select: none;
 }
 
 .deck-container .current-state .stage-container .stage-text.done {
@@ -187,6 +190,7 @@ code {
   justify-content: center;
   width: 30px;
   color: white;
+  user-select: none;
 }
 
 .deck-container .current-state .stage-container .dot.green {
