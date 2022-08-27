@@ -155,7 +155,7 @@ code {
 .deck-container .current-state {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   min-height: 30%;
 }
 
