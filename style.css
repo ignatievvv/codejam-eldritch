@@ -4,6 +4,7 @@ body {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
   margin: 0;
+  background-image: url(./assets/background.png);
 }
 
 code {
@@ -23,6 +24,7 @@ code {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
+  box-shadow: 2px 2px 4px black;
   box-sizing: border-box;
   cursor: pointer;
   height: 187.5px;
@@ -112,6 +114,7 @@ code {
 .difficulty-container .difficulty {
   border-radius: 4px;
   box-sizing: border-box;
+  box-shadow: 2px 2px 4px black;
   color: white;
   cursor: pointer;
   padding: 5px;
@@ -127,6 +130,7 @@ code {
 
 .difficulty-container .difficulty.active,
 .difficulty-container .difficulty:hover {
+  box-shadow: unset;
   background-color: rgb(201, 38, 45);
 }
 
@@ -141,6 +145,7 @@ code {
 
 .deck-container .shuffle-button {
   border-radius: 4px;
+  box-shadow: 2px 2px 4px black;
   background-color: rgb(11, 118, 59);
   color: white;
   cursor: pointer;
@@ -149,6 +154,7 @@ code {
 }
 
 .deck-container .shuffle-button:hover {
+  box-shadow: unset;
   background-color: rgb(201, 38, 45);
 }
 
@@ -211,6 +217,7 @@ code {
 
 .deck-container .deck,
 .deck-container .last-card {
+  box-shadow: 2px 2px 4px black;
   background-size: cover;
   height: 190px;
   width: 130px;
