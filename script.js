@@ -37,6 +37,7 @@ flipAudio.src = "./assets/flip.mp3";
 let ancient = ancients.find((ancient) => ancient.id === "azathoth");
 let difficultyLevel = "very-easy";
 let shuffledPack = [];
+let isFlipping = false;
 
 function getShuffledArr(arr) {
   let initArr = [...arr];
@@ -171,12 +172,20 @@ function shuffleButtonClickHandler() {
 }
 
 function deckClickHandler() {
-  if (shuffledPack.length) {
+  if (shuffledPack.length && !isFlipping) {
+    isFlipping = true;
     lastCard.style.backgroundImage = `url(./assets/mythic-cards/${
       shuffledPack.pop().id
     }.png)`;
     updateTracker();
     flipAudio.play();
+    flipAudio.addEventListener(
+      "ended",
+      () => {
+        isFlipping = false;
+      },
+      { once: true }
+    );
   }
 }
 
