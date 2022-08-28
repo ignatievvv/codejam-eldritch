@@ -121,6 +121,7 @@ code {
   box-sizing: border-box;
   height: 437.5px;
   width: 350px;
+  filter: saturate(200%);
   transition: 0.1s ease;
 }
 
