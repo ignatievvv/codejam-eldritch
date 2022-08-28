@@ -95,8 +95,8 @@ function ancientsContainerClickHandler(event) {
       (ancientItem) => ancientItem.id === event.target.dataset.ancient
     );
     currentAncient.style.backgroundImage = `url(./assets/ancients/${ancient.name}.webp)`;
+    resetApp();
   }
-  resetApp();
 }
 
 function difficultyContainerClickHandler(event) {
@@ -106,8 +106,8 @@ function difficultyContainerClickHandler(event) {
     });
     event.target.classList.add("active");
     difficultyLevel = event.target.dataset.difficulty;
+    resetApp();
   }
-  resetApp();
 }
 
 function shuffleButtonClickHandler() {
