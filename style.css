@@ -230,12 +230,18 @@ code {
   cursor: pointer;
 }
 
-.deck-container .deck,
-.deck-container .last-card {
+.deck-container .deck {
   box-shadow: 2px 2px 4px black;
   background-size: cover;
   height: 190px;
   width: 130px;
+}
+
+.deck-container .last-card {
+  box-shadow: 2px 2px 4px black;
+  background-size: cover;
+  height: 292px;
+  width: 200px;
 }
 
 .deck {
