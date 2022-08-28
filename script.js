@@ -170,6 +170,7 @@ function shuffleButtonClickHandler() {
   ]);
   shuffledPack = [...thirdStagePack, ...secondStagePack, ...firstStagePack];
   updateTracker();
+  lastCard.classList.add("hidden");
   deck.classList.remove("hidden");
   lastCard.style.backgroundImage = "";
 }
