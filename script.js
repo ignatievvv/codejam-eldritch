@@ -12,6 +12,7 @@ const difficultyButtons = document.querySelectorAll(".difficulty");
 const shuffleButton = document.querySelector(".shuffle-button");
 const deck = document.querySelector(".deck");
 const lastCard = document.querySelector(".last-card");
+const currentAncient = document.querySelector(".current-ancient");
 const tracker = {
   greenNum1: document.querySelector("#tracker-g1"),
   brownNum1: document.querySelector("#tracker-br1"),
@@ -93,8 +94,9 @@ function ancientsContainerClickHandler(event) {
     ancient = ancients.find(
       (ancientItem) => ancientItem.id === event.target.dataset.ancient
     );
+    currentAncient.style.backgroundImage = `url(./assets/ancients/${ancient.name}.webp)`;
+    resetApp();
   }
-  resetApp();
 }
 
 function difficultyContainerClickHandler(event) {
@@ -104,8 +106,8 @@ function difficultyContainerClickHandler(event) {
     });
     event.target.classList.add("active");
     difficultyLevel = event.target.dataset.difficulty;
+    resetApp();
   }
-  resetApp();
 }
 
 function shuffleButtonClickHandler() {

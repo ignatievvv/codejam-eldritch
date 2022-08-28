@@ -109,12 +109,27 @@ code {
   height: 100vh;
   min-width: 150px;
   justify-content: center;
+  align-items: center;
+}
+
+.difficulty-container .current-ancient {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./assets/ancients/Azathoth.webp);
+  box-shadow: 2px 2px 4px black;
+  box-sizing: border-box;
+  height: 437.5px;
+  width: 350px;
+  filter: saturate(200%);
+  transition: 0.1s ease;
 }
 
 .difficulty-container .difficulty {
   border-radius: 4px;
   box-sizing: border-box;
   box-shadow: 2px 2px 4px black;
+  width: 160px;
   color: white;
   cursor: pointer;
   padding: 5px;
@@ -215,12 +230,18 @@ code {
   cursor: pointer;
 }
 
-.deck-container .deck,
-.deck-container .last-card {
+.deck-container .deck {
   box-shadow: 2px 2px 4px black;
   background-size: cover;
   height: 190px;
   width: 130px;
+}
+
+.deck-container .last-card {
+  box-shadow: 2px 2px 4px black;
+  background-size: cover;
+  height: 292px;
+  width: 200px;
 }
 
 .deck {
