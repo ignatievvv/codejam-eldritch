@@ -177,7 +177,7 @@ function deckClickHandler() {
   if (shuffledPack.length && !isFlipping) {
     isFlipping = true;
     const nextCard = new Image();
-    nextCard.src = `./assets/mythic-cards/${shuffledPack.pop().id}.png`;
+    nextCard.src = `./assets/mythic-cards/${shuffledPack.pop().id}.jpg`;
     nextCard.onload = () => {
       console.log(nextCard.src);
       lastCard.style.backgroundImage = `url(${nextCard.src})`;
