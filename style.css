@@ -242,6 +242,7 @@ code {
   background-size: cover;
   height: 292px;
   width: 200px;
+  filter: saturate(150%);
 }
 
 .deck {
