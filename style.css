@@ -237,11 +237,17 @@ code {
   width: 130px;
 }
 
+.deck-container .deck.hidden,
+.deck-container .last-card.hidden {
+  visibility: hidden;
+}
+
 .deck-container .last-card {
   box-shadow: 2px 2px 4px black;
   background-size: cover;
   height: 292px;
   width: 200px;
+  filter: saturate(150%);
 }
 
 .deck {

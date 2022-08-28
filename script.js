@@ -170,6 +170,7 @@ function shuffleButtonClickHandler() {
   ]);
   shuffledPack = [...thirdStagePack, ...secondStagePack, ...firstStagePack];
   updateTracker();
+  deck.classList.remove("hidden");
   lastCard.style.backgroundImage = "";
 }
 
@@ -181,6 +182,7 @@ function deckClickHandler() {
     nextCard.onload = () => {
       console.log(nextCard.src);
       lastCard.style.backgroundImage = `url(${nextCard.src})`;
+      lastCard.classList.remove("hidden");
       updateTracker();
       flipAudio.play();
       flipAudio.addEventListener(
@@ -234,6 +236,8 @@ function updateTracker() {
 function resetApp() {
   clearTracker();
   shuffledPack = [];
+  deck.classList.add("hidden");
+  lastCard.classList.add("hidden");
   lastCard.style.backgroundImage = "";
 }
 
