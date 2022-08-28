@@ -1,7 +1,7 @@
 const ancientsData = [
   {
     id: "abhoth",
-    name: "abhoth",
+    name: "Abhoth",
     firstStage: {
       greenCards: 1,
       blueCards: 1,
@@ -20,7 +20,7 @@ const ancientsData = [
   },
   {
     id: "antediluvium",
-    name: "antediluvium",
+    name: "Antediluvium",
     firstStage: {
       greenCards: 1,
       blueCards: 1,
@@ -39,7 +39,7 @@ const ancientsData = [
   },
   {
     id: "atlachnacha",
-    name: "atlachnacha",
+    name: "AtlachNacha",
     firstStage: {
       greenCards: 1,
       blueCards: 1,
@@ -58,7 +58,7 @@ const ancientsData = [
   },
   {
     id: "elderthings",
-    name: "elderthings",
+    name: "ElderThings",
     firstStage: {
       greenCards: 2,
       blueCards: 1,
@@ -77,7 +77,7 @@ const ancientsData = [
   },
   {
     id: "hastur",
-    name: "hastur",
+    name: "Hastur",
     firstStage: {
       greenCards: 0,
       blueCards: 2,
@@ -96,7 +96,7 @@ const ancientsData = [
   },
   {
     id: "hypnos",
-    name: "hypnos",
+    name: "Hypnos",
     firstStage: {
       greenCards: 0,
       blueCards: 1,
@@ -115,7 +115,7 @@ const ancientsData = [
   },
   {
     id: "ithaqua",
-    name: "ithaqua",
+    name: "Ithaqua",
     firstStage: {
       greenCards: 0,
       blueCards: 2,
@@ -134,7 +134,7 @@ const ancientsData = [
   },
   {
     id: "nephrenka",
-    name: "nephrenka",
+    name: "NephrenKa",
     firstStage: {
       greenCards: 0,
       blueCards: 2,
@@ -153,7 +153,7 @@ const ancientsData = [
   },
   {
     id: "nyarlathotep",
-    name: "nyarlathotep",
+    name: "Nyarlathotep",
     firstStage: {
       greenCards: 1,
       blueCards: 1,
@@ -172,7 +172,7 @@ const ancientsData = [
   },
   {
     id: "shuddemell",
-    name: "shuddemell",
+    name: "ShuddeMell",
     firstStage: {
       greenCards: 0,
       blueCards: 2,
@@ -191,7 +191,7 @@ const ancientsData = [
   },
   {
     id: "syzygy",
-    name: "syzygy",
+    name: "Syzygy",
     firstStage: {
       greenCards: 0,
       blueCards: 2,
@@ -210,7 +210,7 @@ const ancientsData = [
   },
   {
     id: "yig",
-    name: "yig",
+    name: "Yig",
     firstStage: {
       greenCards: 1,
       blueCards: 1,
@@ -229,7 +229,7 @@ const ancientsData = [
   },
   {
     id: "azathoth",
-    name: "azathoth",
+    name: "Azathoth",
     firstStage: {
       greenCards: 1,
       blueCards: 1,
@@ -248,7 +248,7 @@ const ancientsData = [
   },
   {
     id: "cthulhu",
-    name: "cthulhu",
+    name: "Cthulthu",
     firstStage: {
       greenCards: 0,
       blueCards: 2,
@@ -267,7 +267,7 @@ const ancientsData = [
   },
   {
     id: "iogSothoth",
-    name: "iogSothoth",
+    name: "IogSothoth",
     firstStage: {
       greenCards: 0,
       blueCards: 1,
@@ -286,7 +286,7 @@ const ancientsData = [
   },
   {
     id: "shubNiggurath",
-    name: "shubNiggurath",
+    name: "ShubNiggurath",
     firstStage: {
       greenCards: 1,
       blueCards: 1,
