@@ -13,6 +13,7 @@ const shuffleButton = document.querySelector(".shuffle-button");
 const deck = document.querySelector(".deck");
 const lastCard = document.querySelector(".last-card");
 const currentAncient = document.querySelector(".current-ancient");
+const soundButton = document.querySelector(".button-sound");
 const tracker = {
   greenNum1: document.querySelector("#tracker-g1"),
   brownNum1: document.querySelector("#tracker-br1"),
@@ -197,6 +198,18 @@ function deckClickHandler() {
   }
 }
 
+function soundButtonClickHandler() {
+  if (!audio.muted) {
+    soundButton.classList.add("muted");
+    audio.muted = true;
+    flipAudio.muted = true;
+  } else {
+    soundButton.classList.remove("muted");
+    audio.muted = false;
+    flipAudio.muted = false;
+  }
+}
+
 function clearTracker() {
   for (let counter in tracker) {
     tracker[counter].textContent = 0;
@@ -246,6 +259,7 @@ ancientsContainer.addEventListener("click", ancientsContainerClickHandler);
 difficultyContainer.addEventListener("click", difficultyContainerClickHandler);
 shuffleButton.addEventListener("click", shuffleButtonClickHandler);
 deck.addEventListener("click", deckClickHandler);
+soundButton.addEventListener("click", soundButtonClickHandler);
 
 window.addEventListener("click", () => {
   if (!isPlayed) {

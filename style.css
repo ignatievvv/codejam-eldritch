@@ -254,6 +254,25 @@ code {
   background-image: url(./assets/cardBackground.png);
 }
 
+.button-sound {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: unset;
+  background-image: url(./assets/icons/sound.png);
+  background-position: center;
+  background-size: contain;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.button-sound.muted {
+  background-image: url(./assets/icons/mute.png);
+}
+
 .App {
   background-position: 50%;
   background-repeat: no-repeat;
